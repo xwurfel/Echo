@@ -5,5 +5,6 @@ plugins {
     alias(libs.plugins.kotlin.compose) apply false
     alias(libs.plugins.undercouch.download) apply false
     alias(libs.plugins.kotlin.kapt) apply false
+    alias(libs.plugins.hilt.android) apply false
 }
 

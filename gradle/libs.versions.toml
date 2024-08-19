@@ -11,6 +11,8 @@ composeBom = "2024.06.00"
 task = "5.6.0"
 kapt = "1.8.0"
 tensorflowLiteTaskAudio = "0.4.0"
+navigation-safeargs = "2.7.7"
+hilt = "2.49"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -29,6 +31,8 @@ androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
 kotlin-stdlib-jdk7 = { module = "org.jetbrains.kotlin:kotlin-stdlib-jdk7" }
 tensorflow-lite-task-audio = { module = "org.tensorflow:tensorflow-lite-task-audio", version.ref = "tensorflowLiteTaskAudio" }
+hilt = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
+hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hilt" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
@@ -36,5 +40,5 @@ kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 undercouch-download = { id = "de.undercouch.download", version.ref = "task" }
 kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kapt" }
-androidx-navigation-safeargs = { id = "androidx.navigation.safeargs", version = "2.7.7" }
-
+androidx-navigation-safeargs = { id = "androidx.navigation.safeargs", version.ref = "navigation-safeargs" }
+hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
